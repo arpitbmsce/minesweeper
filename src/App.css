@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.arena {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #32a852;
+  border-top: 1px solid #33523b;
+  border-left: 1px solid #33523b;
+}
+.row {
+  border-bottom: 1px solid #33523b;
+}
+.column {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-right: 1px solid #33523b;
+}
+.column.not-clicked {
+  background-color: #d93baf;
+  cursor: pointer;
+}
+.cell {
+  position: relative;
+  top: 25%;
+}
+.cell.hidden {
+  visibility: hidden;
+}
+.resetButton {
+  width: 150px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #d93baf;
+}
+.resetButton:disabled {
+  background-color: #32a852;
+  cursor: not-allowed;
+}
+
+.mine {
+  animation: App-logo-spin infinite 20s linear;
+  height: 10px;
+  z-index: 2;
+}
